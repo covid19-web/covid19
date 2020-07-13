@@ -23,7 +23,7 @@ nav {
 }
 
 nav li {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 nav ul {
@@ -54,7 +54,7 @@ nav .dropdown {
 }
 
 nav .dropdown .dropbtn {
-    font-size: 26px;
+    font-size: 22px;
     border: none;
     outline: none;
     color: black;
@@ -70,6 +70,7 @@ nav .dropdown:hover .dropbtn {
 }
 
 nav .dropdown-content {
+    font-size: 18px;
     display: none;
     -webkit-box-align: center;
     -ms-flex-align: center;

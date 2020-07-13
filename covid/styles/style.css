@@ -23,7 +23,7 @@ nav {
 }
 
 nav li {
-  font-size: 26px;
+  font-size: 22px;
 }
 
 nav ul {
@@ -54,7 +54,7 @@ nav .dropdown {
 }
 
 nav .dropdown .dropbtn {
-  font-size: 26px;
+  font-size: 22px;
   border: none;
   outline: none;
   color: black;
@@ -70,6 +70,7 @@ nav .dropdown:hover .dropbtn {
 }
 
 nav .dropdown-content {
+  font-size: 18px;
   display: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -141,7 +142,7 @@ nav .dropdown:hover .dropdown-content {
 }
 
 #main_text {
-  font-size: 96px;
+  font-size: 80px;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -412,16 +413,16 @@ nav .dropdown:hover .dropdown-content {
 .card {
   -ms-flex-line-pack: justify;
   align-content: space-between;
-  width: 500px;
-  height: 852px;
+  width: 356px;
+  height: 652px;
   background-color: #E2E2E2;
   border-radius: 20px;
   margin: 20px;
 }
 
 .card img {
-  width: 500px;
-  height: 410px;
+  width: 356px;
+  height: 300px;
   border-radius: 20px 20px 0px 0px;
 }
 
