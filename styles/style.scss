@@ -1,0 +1,19 @@
+@import "nav";
+@import "main_image";
+@import "info";
+@import "cards";
+@import "footer";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    font-family: 'Montserrat',
+    sans-serif;
+}

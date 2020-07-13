@@ -1,0 +1,57 @@
+.info {
+    display: grid;
+    grid-template-columns: 10% repeat(10, minmax(10px, 1fr)) 10%;
+    grid-template-rows: 0.4fr 0.5fr 0.5fr 0.6fr;
+}
+
+#concern {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #BF1A2C;
+    font-weight: 500;
+}
+
+#side_info {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.center_concern {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-column: 2/7;
+    grid-row: 2/4;
+}
+
+.center_side_text {
+    display: grid;
+    grid-column: 8/12;
+    grid-row: 2/4;
+    justify-content: center;
+    align-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .info {
+        margin-bottom: 50px;
+        display: block;
+    }
+    #concern {
+        font-size: 16px;
+        text-align: center;
+    }
+    #side_info {
+        font-size: 8px;
+    }
+    .center_concern {
+        padding-top: 70px;
+        padding-bottom: 40px;
+        width: 80%;
+        margin: auto;
+    }
+    .center_side_text {
+        width: 80%;
+        margin: auto;
+    }
+}
