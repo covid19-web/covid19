@@ -7,42 +7,35 @@
     <title>Covid-19</title>
     <link rel="icon" type="image/png" href="./img/stop_covid.png" />
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <main>
-        <div class="nav-container">
-            <nav>
+        <div id="nav-container" class="nav-container">
+            <nav id="navbar">
                 <div class="image_logo">
                     <a href=""><img id="logo" src="./img/CEI.png" alt="no logo"></a>
+                    <a href=""><img id="logo2" src="./img/stop_covid.png" alt="no logo"></a>
                 </div>
-                <ul>
+
+                <ul id="myLinks">
                     <li>
-                        <div class="dropdown">
-                            <button class="dropbtn">
-                            General information ▼
-                        </button>
-                            <div class="dropdown-content">
-                                <a href="">Project title: Stop COVID`19</a>
-                                <a href="./applicant.html">Applicant</a>
-                                <a href="#">Intended date and place of implementation</a>
-                            </div>
-                        </div>
+                        <a id="home" href=""><b>Home</b></a>
                     </li>
                     <li>
-                        <div class="dropdown">
-                            <button class="dropbtn">
-                                Description of the activity ▼
-                        </button>
-                            <div class="dropdown-content">
-                                <a href="#">link1</a>
-                                <a href="#">link2</a>
-                                <a href="#">link3</a>
-                            </div>
-                        </div>
+                        <a href="./applicant.html">General information</a>
+                    </li>
+                    <li>
+                        <a href="./description.html">Description of the activity</a>
                     </li>
                     <li><a href="#">Results</a></li>
                 </ul>
+
+                <a id="hamburger" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </nav>
         </div>
         <section class="first">
@@ -62,32 +55,43 @@
                 </h1>
             </div>
             <div class="center_side_text">
-                <h2 id="side_info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h2>
+                <h2 id="side_info">The project has use case, implemented in Ukraine and Belarus. STOP COVID 19 activities will run from June 2020 to December 2020 <br><br> The information about health and seek persons in Lviv region, Western Ukraine and Belarus will be
+                    collected and processed.
+                </h2>
             </div>
         </div>
         <div class="cards">
             <div class="card">
-                <img src="./img/sample1.jpg" alt="">
+                <img src="./img/covid_planet.png" alt="">
                 <div class="title">
-                    <h1 class="title_text">Lorem Ipsum is simply </h1>
+                    <a href="./applicant.html">
+                        <h1 class="title_text"><u>General information</u></h1>
+                    </a>
                 </div>
                 <div class="article">
-                    <h3 class="article_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </h3>
+                    <h3 class="article_text">Two countries will participate in the STOP COVID 19 project. <br><br> Ukraine is represented by Lviv Polytechnic National University and Danylo Halytsky Lviv National Medical University.<br><br> Belarus is represented by Belarus State
+                        Economic University.
+                    </h3>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/Coronavirus-test-tube.png" alt="">
+                <img src="./img/covid_mask.png" alt="">
                 <div class="title">
-                    <h1 class="title_text">Lorem Ipsum is simply </h1>
+                    <a href="./description.html">
+                        <h1 class="title_text"><u>Description of the activity</u></h1>
+                    </a>
                 </div>
                 <div class="article">
-                    <h3 class="article_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </h3>
+                    <h3 class="article_text">The implementation of our ideas will allow us to prove the patterns of dependence on the prevalence of COVID 19 in the territory of different countries. <br><br> Depending on the presence in humans of certain antibodies to influenza
+                        virus, tuberculosis, which may be correlated with a particular human blood group.</h3>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/corona.jpg" alt="">
+                <img src="./img/covid_small.jpg" alt="">
                 <div class="title">
-                    <h1 class="title_text">Lorem Ipsum is simply </h1>
+                    <a href="./results.html">
+                        <h1 class="title_text"><u>Results</u></h1>
+                    </a>
                 </div>
                 <div class="article">
                     <h3 class="article_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </h3>
@@ -96,7 +100,11 @@
 
 
         </div>
-
+        <div class="health">
+            <h1>Selected core sector </h1>
+            <br>
+            <p>Healthcare and telemedicine</p>
+        </div>
         <footer>
             <div class="center_footer_text">
                 <h1 id="footer_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h1>
@@ -111,10 +119,27 @@
                 </div>
             </div>
             <div class="center_image">
-                <img id="CEI_logo" src="./img/CEI.png" alt="">
+                <div class="block">
+                    <img id="CEI_logo" src="./img/CEI.png" alt="">
+                    <img id="stop_logo" src="./img/stop_covid.png" alt="">
+                </div>
             </div>
         </footer>
     </main>
 </body>
+<script>
+    function myFunction() {
+
+        var navbar = document.getElementById("navbar");
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            navbar.style.display = "block";
+
+            x.style.display = "block";
+        }
+    }
+</script>
 
 </html>

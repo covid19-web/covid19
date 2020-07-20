@@ -2,8 +2,16 @@
   background-color: white;
 }
 
+#hamburger {
+  display: none;
+}
+
 #logo {
   width: 143px;
+  height: 87px;
+}
+
+#logo2 {
   height: 87px;
 }
 
@@ -23,7 +31,7 @@ nav {
 }
 
 nav li {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 nav ul {
@@ -101,10 +109,18 @@ nav .dropdown:hover .dropdown-content {
   display: block;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
+  .image_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   #logo {
-    width: 50px;
-    height: auto;
+    width: 60px;
+    height: 35px;
+  }
+  #logo2 {
+    height: 35px;
   }
   nav {
     display: -webkit-box;
@@ -118,11 +134,37 @@ nav .dropdown:hover .dropdown-content {
     flex: 0.2;
   }
   nav li {
-    font-size: 12px;
+    font-size: 16px;
+    padding: 20px;
   }
-  nav .dropdown .dropbtn {
-    font-size: 12px;
-    padding: 8px 7px;
+  nav li:active {
+    background-color: #212539;
+    color: white;
+  }
+  nav li:active a {
+    color: white;
+  }
+  #myLinks {
+    display: none;
+  }
+  #hamburger {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  #hamburger.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #hamburger:hover {
+    background-color: #ddd;
+  }
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
   }
 }
 
@@ -414,7 +456,7 @@ nav .dropdown:hover .dropdown-content {
   -ms-flex-line-pack: justify;
   align-content: space-between;
   width: 356px;
-  height: 652px;
+  height: 682px;
   background-color: #E2E2E2;
   border-radius: 20px;
   margin: 20px;
@@ -422,12 +464,12 @@ nav .dropdown:hover .dropdown-content {
 
 .card img {
   width: 356px;
-  height: 300px;
+  height: 260px;
   border-radius: 20px 20px 0px 0px;
 }
 
 .card .title {
-  height: 134px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,7 +532,7 @@ nav .dropdown:hover .dropdown-content {
   }
   .card {
     width: 300px;
-    height: 390px;
+    height: 450px;
     background-color: #E2E2E2;
     border-radius: 20px;
     margin: 40px 0px 40px 0px;
@@ -501,7 +543,7 @@ nav .dropdown:hover .dropdown-content {
     border-radius: 20px 20px 0px 0px;
   }
   .card .title {
-    height: 90px;
+    height: 60px;
   }
   .card .title_text {
     text-align: center;
@@ -509,7 +551,7 @@ nav .dropdown:hover .dropdown-content {
   }
   .card .article_text {
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
@@ -525,19 +567,19 @@ nav .dropdown:hover .dropdown-content {
             justify-content: center;
   }
   .card {
-    width: 260px;
-    height: 350px;
+    width: 300px;
+    height: 450px;
     background-color: #E2E2E2;
     border-radius: 20px;
     margin: 0px 40px 40px 40px;
   }
   .card img {
-    width: 260px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     border-radius: 20px 20px 0px 0px;
   }
   .card .title {
-    height: 90px;
+    height: 60px;
   }
   .card .title_text {
     text-align: center;
@@ -545,7 +587,7 @@ nav .dropdown:hover .dropdown-content {
   }
   .card .article_text {
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
@@ -562,7 +604,7 @@ nav .dropdown:hover .dropdown-content {
   }
   .card {
     width: 300px;
-    height: 390px;
+    height: 450px;
     background-color: #E2E2E2;
     border-radius: 20px;
     margin: 0px 40px 40px 40px;
@@ -573,7 +615,7 @@ nav .dropdown:hover .dropdown-content {
     border-radius: 20px 20px 0px 0px;
   }
   .card .title {
-    height: 90px;
+    height: 60px;
   }
   .card .title_text {
     text-align: center;
@@ -581,8 +623,16 @@ nav .dropdown:hover .dropdown-content {
   }
   .card .article_text {
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 500;
   }
+}
+
+.health {
+  margin: 10%;
+}
+
+.health h1 {
+  color: #BF1A2C;
 }
 
 footer {
@@ -661,6 +711,22 @@ footer .center_image {
   grid-column: 8/12;
 }
 
+footer .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer #CEI_logo {
+  margin-right: 20px;
+  height: 140px;
+}
+
+footer #stop_logo {
+  margin-left: 20px;
+  height: 140px;
+}
+
 @media only screen and (max-width: 600px) {
   footer {
     display: block;
@@ -680,6 +746,11 @@ footer .center_image {
             justify-content: center;
   }
   footer #CEI_logo {
+    margin-right: 20px;
+    height: 40px;
+  }
+  footer #stop_logo {
+    margin-left: 20px;
     height: 40px;
   }
   footer #footer_text {
@@ -706,7 +777,12 @@ footer .center_image {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  footer #CEI_logo {
+  #CEI_logo {
+    margin-right: 20px;
+    height: 40px;
+  }
+  #stop_logo {
+    margin-left: 20px;
     height: 40px;
   }
   footer #footer_text {
@@ -717,7 +793,7 @@ footer .center_image {
 
 @media only screen and (max-width: 1024px) and (min-width: 900px) {
   footer #CEI_logo {
-    height: 200px;
+    height: 140px;
   }
 }
 

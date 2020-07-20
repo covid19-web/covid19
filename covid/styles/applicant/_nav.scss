@@ -2,8 +2,16 @@
     background-color: white;
 }
 
+#hamburger {
+    display: none;
+}
+
 #logo {
     width: 143px;
+    height: 87px;
+}
+
+#logo2 {
     height: 87px;
 }
 
@@ -23,7 +31,7 @@ nav {
 }
 
 nav li {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 nav ul {
@@ -101,10 +109,17 @@ nav .dropdown:hover .dropdown-content {
     display: block;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
+    .image_logo {
+        display: flex;
+    }
     #logo {
-        width: 50px;
-        height: auto;
+        width: 60px;
+        height: 35px;
+    }
+    #logo2 {
+        // width: 35px;
+        height: 35px;
     }
     nav {
         display: -webkit-box;
@@ -118,10 +133,39 @@ nav .dropdown:hover .dropdown-content {
         flex: 0.2;
     }
     nav li {
-        font-size: 12px;
+        font-size: 16px;
+        padding: 20px;
     }
-    nav .dropdown .dropbtn {
-        font-size: 12px;
-        padding: 8px 7px;
+    nav li:active {
+        background-color: #212539;
+        color: white;
+        a {
+            color: white;
+        }
+    }
+    #myLinks {
+        display: none;
+    }
+    #myLinks {
+        display: none;
+    }
+    #hamburger {
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    #hamburger.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #hamburger:hover {
+        background-color: #ddd;
+    }
+    nav a:hover {
+        background-color: #ddd;
+        color: black;
     }
 }

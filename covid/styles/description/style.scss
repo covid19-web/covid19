@@ -1,0 +1,22 @@
+@import "nav";
+@import "line";
+@import "table";
+@import "first_title";
+@import "second_title";
+@import "third_title";
+@import "button";
+@import "footer";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    font-family: 'Montserrat',
+    sans-serif;
+}

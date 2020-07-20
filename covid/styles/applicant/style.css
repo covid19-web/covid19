@@ -2,8 +2,16 @@
   background-color: white;
 }
 
+#hamburger {
+  display: none;
+}
+
 #logo {
   width: 143px;
+  height: 87px;
+}
+
+#logo2 {
   height: 87px;
 }
 
@@ -23,7 +31,7 @@ nav {
 }
 
 nav li {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 nav ul {
@@ -101,10 +109,18 @@ nav .dropdown:hover .dropdown-content {
   display: block;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
+  .image_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   #logo {
-    width: 50px;
-    height: auto;
+    width: 60px;
+    height: 35px;
+  }
+  #logo2 {
+    height: 35px;
   }
   nav {
     display: -webkit-box;
@@ -118,11 +134,40 @@ nav .dropdown:hover .dropdown-content {
     flex: 0.2;
   }
   nav li {
-    font-size: 12px;
+    font-size: 16px;
+    padding: 20px;
   }
-  nav .dropdown .dropbtn {
-    font-size: 12px;
-    padding: 8px 7px;
+  nav li:active {
+    background-color: #212539;
+    color: white;
+  }
+  nav li:active a {
+    color: white;
+  }
+  #myLinks {
+    display: none;
+  }
+  #myLinks {
+    display: none;
+  }
+  #hamburger {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  #hamburger.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #hamburger:hover {
+    background-color: #ddd;
+  }
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
   }
 }
 
@@ -590,6 +635,22 @@ footer .center_image {
   grid-column: 8/12;
 }
 
+footer .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer #CEI_logo {
+  margin-right: 20px;
+  height: 140px;
+}
+
+footer #stop_logo {
+  margin-left: 20px;
+  height: 140px;
+}
+
 @media only screen and (max-width: 600px) {
   footer {
     display: block;
@@ -609,6 +670,11 @@ footer .center_image {
             justify-content: center;
   }
   footer #CEI_logo {
+    margin-right: 20px;
+    height: 40px;
+  }
+  footer #stop_logo {
+    margin-left: 20px;
     height: 40px;
   }
   footer #footer_text {
@@ -622,20 +688,25 @@ footer .center_image {
     display: block;
     margin-top: 80px;
   }
+  footer .ico {
+    height: 40px;
+  }
   footer .social {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  footer .ico {
-    height: 40px;
   }
   footer .center_image {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
-  footer #CEI_logo {
+  #CEI_logo {
+    margin-right: 20px;
+    height: 40px;
+  }
+  #stop_logo {
+    margin-left: 20px;
     height: 40px;
   }
   footer #footer_text {
@@ -646,7 +717,7 @@ footer .center_image {
 
 @media only screen and (max-width: 1024px) and (min-width: 900px) {
   footer #CEI_logo {
-    height: 200px;
+    height: 140px;
   }
 }
 

@@ -1,0 +1,119 @@
+    .first_title {
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: 10% repeat(10, minmax(10px, 1fr)) 10%;
+        grid-template-rows: 4fr;
+        padding-bottom: 60px;
+    }
+    
+    .image1 {
+        grid-column: 2/7;
+    }
+    
+    #img1 {
+        width: 100%;
+    }
+    
+    .title1 {
+        grid-column: 8/12;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text1 {
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        /* or 41px */
+        text-align: justify;
+    }
+    
+    @media only screen and (max-width: 414px) {
+        .first_title {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+        .image1 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        #img1 {
+            width: 80%;
+        }
+        .title1 {
+            display: flex;
+            justify-content: center;
+        }
+        .text1 {
+            width: 80%;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16 px;
+            text-align: justify;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) and (min-width: 414px) {
+        .first_title {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+        .image1 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        #img1 {
+            width: 80%;
+        }
+        .title1 {
+            display: flex;
+            justify-content: center;
+        }
+        .text1 {
+            width: 80%;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16 px;
+            text-align: justify;
+        }
+    }
+    
+    @media only screen and (max-width: 1024px) and (min-width: 768px) {
+        .first_title {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+        .image1 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        #img1 {
+            width: 60%;
+        }
+        .title1 {
+            display: flex;
+            justify-content: center;
+        }
+        .text1 {
+            width: 80%;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16 px;
+            text-align: justify;
+        }
+    }

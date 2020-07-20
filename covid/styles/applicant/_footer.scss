@@ -37,6 +37,17 @@ footer {
         grid-row: 2/4;
         grid-column: 8/12;
     }
+    .block {
+        display: flex;
+    }
+    #CEI_logo {
+        margin-right: 20px;
+        height: 140px;
+    }
+    #stop_logo {
+        margin-left: 20px;
+        height: 140px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -53,6 +64,11 @@ footer {
             justify-content: center;
         }
         #CEI_logo {
+            margin-right: 20px;
+            height: 40px;
+        }
+        #stop_logo {
+            margin-left: 20px;
             height: 40px;
         }
         #footer_text {
@@ -67,18 +83,23 @@ footer {
         display: block;
         margin-top: 80px;
     }
-    footer .social {
-        justify-content: center;
-    }
     footer .ico {
         height: 40px;
+    }
+    footer .social {
+        justify-content: center;
     }
     footer .center_image {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
     }
-    footer #CEI_logo {
+    #CEI_logo {
+        margin-right: 20px;
+        height: 40px;
+    }
+    #stop_logo {
+        margin-left: 20px;
         height: 40px;
     }
     footer #footer_text {
@@ -89,6 +110,6 @@ footer {
 
 @media only screen and (max-width: 1024px) and (min-width: 900px) {
     footer #CEI_logo {
-        height: 200px;
+        height: 140px;
     }
 }

@@ -46,7 +46,7 @@
     -ms-flex-line-pack: justify;
     align-content: space-between;
     width: 356px;
-    height: 652px;
+    height: 682px;
     background-color: #E2E2E2;
     border-radius: 20px;
     margin: 20px;
@@ -54,12 +54,12 @@
 
 .card img {
     width: 356px;
-    height: 300px;
+    height: 260px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .card .title {
-    height: 134px;
+    height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -118,7 +118,7 @@
     }
     .card {
         width: 300px;
-        height: 390px;
+        height: 450px;
         background-color: #E2E2E2;
         border-radius: 20px;
         margin: 40px 0px 40px 0px;
@@ -129,7 +129,7 @@
         border-radius: 20px 20px 0px 0px;
     }
     .card .title {
-        height: 90px;
+        height: 60px;
     }
     .card .title_text {
         text-align: center;
@@ -137,7 +137,7 @@
     }
     .card .article_text {
         font-size: 10px;
-        font-weight: 600;
+        font-weight: 500;
     }
 }
 
@@ -149,19 +149,19 @@
         justify-content: center;
     }
     .card {
-        width: 260px;
-        height: 350px;
+        width: 300px;
+        height: 450px;
         background-color: #E2E2E2;
         border-radius: 20px;
         margin: 0px 40px 40px 40px;
     }
     .card img {
-        width: 260px;
-        height: 150px;
+        width: 300px;
+        height: 200px;
         border-radius: 20px 20px 0px 0px;
     }
     .card .title {
-        height: 90px;
+        height: 60px;
     }
     .card .title_text {
         text-align: center;
@@ -169,7 +169,7 @@
     }
     .card .article_text {
         font-size: 10px;
-        font-weight: 600;
+        font-weight: 500;
     }
 }
 
@@ -182,7 +182,7 @@
     }
     .card {
         width: 300px;
-        height: 390px;
+        height: 450px;
         background-color: #E2E2E2;
         border-radius: 20px;
         margin: 0px 40px 40px 40px;
@@ -193,7 +193,7 @@
         border-radius: 20px 20px 0px 0px;
     }
     .card .title {
-        height: 90px;
+        height: 60px;
     }
     .card .title_text {
         text-align: center;
@@ -201,6 +201,6 @@
     }
     .card .article_text {
         font-size: 10px;
-        font-weight: 600;
+        font-weight: 500;
     }
 }
