@@ -1,0 +1,207 @@
+.bullet_text {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 10% repeat(10, minmax(10px, 1fr)) 10%;
+    grid-template-rows: 1.3fr 2.9fr 1fr;
+}
+
+.center_bullet_title {
+    grid-row: 1/2;
+    grid-column: 2/12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bullet_title {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 159%;
+}
+
+.center_bullet_content {
+    grid-row: 2/3;
+    grid-column: 2/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bullet_content {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 150%;
+}
+
+.center_bullet_results {
+    grid-row: 3/4;
+    grid-column: 2/12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bullet_results {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 157%;
+}
+
+@media only screen and (max-width: 420px) {
+    .bullet_text {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 10% repeat(10, minmax(10px, 1fr)) 10%;
+        grid-template-rows: 1.3fr 2.2fr 1fr;
+    }
+    .center_bullet_title {
+        grid-row: 1/2;
+        grid-column: 2/12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #bullet_title {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 159%;
+    }
+    .center_bullet_content {
+        grid-row: 2/3;
+        grid-column: 2/9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #bullet_content {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .center_bullet_results {
+        grid-row: 3/4;
+        grid-column: 2/12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #bullet_results {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 157%;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 420px) {
+    .bullet_text {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 10% repeat(10, minmax(10px, 1fr)) 10%;
+        grid-template-rows: 1.3fr 4fr 1fr;
+    }
+    .center_bullet_title {
+        grid-row: 1/2;
+        grid-column: 2/12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #bullet_title {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 159%;
+    }
+    .center_bullet_content {
+        grid-row: 2/3;
+        grid-column: 2/9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #bullet_content {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .center_bullet_results {
+        grid-row: 3/4;
+        grid-column: 2/12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #bullet_results {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 157%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .bullet_text {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 10% repeat(10, minmax(10px, 1fr)) 10%;
+        grid-template-rows: 1.3fr 3.5fr 1fr;
+    }
+    .center_bullet_title {
+        grid-row: 1/2;
+        grid-column: 2/12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #bullet_title {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 159%;
+    }
+    .center_bullet_content {
+        grid-row: 2/3;
+        grid-column: 2/9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #bullet_content {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .center_bullet_results {
+        grid-row: 3/4;
+        grid-column: 2/12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #bullet_results {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 157%;
+    }
+}
