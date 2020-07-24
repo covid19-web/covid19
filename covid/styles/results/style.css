@@ -468,7 +468,7 @@ footer .social {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-start;
 }
 
 footer .center_image {
@@ -581,7 +581,8 @@ footer #stop_logo {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat',
+ sans-serif;
 }
 
 body a {
