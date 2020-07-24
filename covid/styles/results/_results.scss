@@ -1,5 +1,5 @@
 .results {
-    min-height: 60vh;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,9 +22,9 @@
     margin: 90px;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
     .results {
-        min-height: 60vh;
+        min-height: 20vh;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -61,9 +61,9 @@
     }
 }
 
-@media only screen and (min-width: 414px) and (max-width: 768px) {
+@media only screen and (min-width: 415px) and (max-width: 768px) {
     .results {
-        min-height: 70vh;
+        min-height: 20vh;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
